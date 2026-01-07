@@ -2,16 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Age Calculator</title>
+  <title>🎉 Animated Age Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <div class="container">
-    <h1>Age Calculator</h1>
-    <p>Enter your date of birth:</p>
-    <input type="date" id="dob">
+    <h1>🎂 Age Calculator</h1>
+    <p>Calculate your exact age in years, months, and days</p>
+
+    <div class="input-box">
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob">
+    </div>
+
     <button onclick="calculateAge()">Calculate Age</button>
+
     <div id="result"></div>
+
+    <div class="bubbles">
+      <!-- bubbles will animate in background -->
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </div>
 
   <script src="script.js"></script>

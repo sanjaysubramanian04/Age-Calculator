@@ -1,18 +1,18 @@
 function calculateAge() {
-  const dob = document.getElementById('dob').value;
-  const result = document.getElementById('result');
+  const dob = document.getElementById("dob").value;
+  const result = document.getElementById("result");
 
   if (!dob) {
-    result.innerText = "❌ Please select your date of birth!";
+    result.innerHTML = "❌ Please select your date of birth";
     return;
   }
 
-  const dobDate = new Date(dob);
+  const birth = new Date(dob);
   const today = new Date();
 
-  let years = today.getFullYear() - dobDate.getFullYear();
-  let months = today.getMonth() - dobDate.getMonth();
-  let days = today.getDate() - dobDate.getDate();
+  let years = today.getFullYear() - birth.getFullYear();
+  let months = today.getMonth() - birth.getMonth();
+  let days = today.getDate() - birth.getDate();
 
   if (days < 0) {
     months--;
@@ -24,10 +24,8 @@ function calculateAge() {
     months += 12;
   }
 
-  if (years < 0) {
-    result.innerText = "❌ Invalid date of birth!";
-    return;
-  }
-
-  result.innerText = `✅ You are ${years} years, ${months} months, and ${days} days old.`;
+  result.innerHTML = `🎉 <br>
+    <span style="color:#69074d">${years}</span> Years,
+    <span style="color:#69074d">${months}</span> Months,
+    <span style="color:#69074d">${days}</span> Days old`;
 }

@@ -33,5 +33,6 @@ View and contribute to the code: [GitHub Repository](https://github.com/sanjaysu
 
 ---
 
-## 📁 Project Structure
+## 📄 License
+This project is licensed under the MIT License.
 
